@@ -39,33 +39,55 @@
 <div class="col">
 
 <h2>Paper Overview</h2>
+<p>The 2013 research paper “Playing Atari with Deep Reinforcement Learning” by Volodymyr Mnih and colleagues at DeepMind Technologies introduces a groundbreaking deep learning model. This model, a convolutional neural network, uses reinforcement learning to learn control policies directly from high-dimensional sensory inputs, specifically raw pixels from Atari 2600 games. The significance of this work lies in its demonstration of an AI system learning and performing at or above human level without needing manual feature extraction, representing a major advancement in AI capabilities.</p>
 
 <h2>Literature Review</h2>
-<p>
-  <a name="Network Architecture"></a>
-  <img src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fnature14236/MediaObjects/41586_2015_BFnature14236_Fig1_HTML.jpg?as=webp" alt="Network Architecture" width="100%" />
-</p>
-<p> The network architecture is a convolutional neural network (CNN) with 3 convolutional layers and 2 fully connected layers. The input to the network is a 84x84x4 image produced by preprocessing the raw Atari frames. The first hidden layer convolves 16 8x8 filters with stride 4 with the input image and applies a rectifier nonlinearity. The second hidden layer convolves 32 4x4 filters with stride 2, again followed by a rectifier nonlinearity. The final hidden layer is fully-connected and consists of 256 rectifier units. The output layer is a fully-connected linear layer with a single output for each valid action. The number of valid actions varied between 4 and 18 on the games we considered.</p>
+<p>The development of deep reinforcement learning, as showcased in this paper, is built upon earlier significant works. Pioneering algorithms like TD-gammon by Gerald Tesauro and Neural Fitted Q-learning (NFQ) by Martin Riedmiller laid the groundwork for this field. Additionally, the Arcade Learning Environment, developed by Marc Bellemare and others, provided a standard testing platform for reinforcement learning algorithms on Atari 2600 games. These foundational works were crucial for the advancements made in “Playing Atari with Deep Reinforcement Learning.”</p>
 
-</p>
+<h2>Methodology and Technical Details</h2>
+<p>The cornerstone of the research presented in “Playing Atari with Deep Reinforcement Learning” is its innovative network architecture. The model is a convolutional neural network (CNN), designed specifically to process and interpret the visual input from Atari games.</p>
+<p>The architecture comprises three convolutional layers and two fully connected layers. The network processes input in the form of an 84x84x4 image, which is derived from preprocessing the raw frames of Atari 2600 games. Here's a breakdown of the layers:</p>
+<ul>
+    <li><strong>First Hidden Layer:</strong> This layer applies 16 8x8 filters with a stride of 4 to the input image. Following the convolution, a rectifier nonlinearity is applied.</li>
+    <li><strong>Second Hidden Layer:</strong> This layer consists of 32 4x4 filters with a stride of 2, again followed by a rectifier nonlinearity.</li>
+    <li><strong>Third Hidden Layer:</strong> The final hidden layer is fully connected, containing 256 rectifier units.</li>
+    <li><strong>Output Layer:</strong> The output is a fully-connected linear layer, corresponding to each valid action in the game. The number of valid actions varies between 4 and 18, depending on the game.</li>
+</ul>
 
 <h2>Biography</h2>
+<p>The paper's authors, all members of DeepMind Technologies at the time of writing, bring diverse and rich academic and professional backgrounds. Volodymyr Mnih, the lead author, holds a PhD in Machine Learning from the University of Toronto. His colleagues include Koray Kavukcuoglu, David Silver, Alex Graves, Ioannis Antonoglou, Daan Wierstra, and Martin Riedmiller, each bringing unique expertise and experience from various prestigious institutions and fields of study.</p>
+
 <h2>Social Impact</h2>
+<p>The method presented in the paper has far-reaching implications for society. Positively, it opens avenues in robotics, autonomous vehicles, and advanced gaming systems. However, it also raises concerns about its potential use in autonomous weapons systems and gambling, which could have detrimental societal impacts. The ability of these models to learn and operate autonomously in complex environments is both an opportunity and a challenge for ethical considerations in technology development.</p>
+
 <h2>Industry Applications</h2>
+<p>The method detailed in this paper has practical applications in the development of AI and robotics, particularly in systems that require autonomous decision-making based on sensory inputs. Its application in self-driving cars is a notable example, showcasing its potential in enhancing decision-making processes in autonomous systems.</p>
+
 <h2>Follow-on Research</h2>
+<p>The paper lays the foundation for further research in applying deep reinforcement learning to more complex and contemporary games. This progression from Atari games to more sophisticated gaming environments can provide deeper insights and more robust applications of AI in various fields.</p>
+
 <h2>Peer-Review</h2>
 
 <p>Just as we have done in the role-playing exercise, analyze the paper from all perspectives.
 </p>
 
 <h2>References</h2>
+<ul>
+    <li>Mnih, V., et al. (2013). Playing Atari with Deep Reinforcement Learning.</li>
+    <li>Tesauro, G. TD-gammon
+
 
 <p><a name="mnih 2013">[1]</a> <a href="https://www.cs.toronto.edu/~vmnih/docs/dqn.pdf"
   >Mnih et al.
   <em>Playing Atari with Deep Reinforcement Learning.</em></a>
   NIPS Deep Learning Workshop, 2013.
 </p>
-
+<p>
+  Mnih, V., et al. (2013). Playing Atari with Deep Reinforcement Learning.
+Tesauro, G. TD-gammon.
+Riedmiller, M. Neural Fitted Q-learning (NFQ).
+Bellemare, M., et al. The Arcade Learning Environment: An Evaluation Platform for General Agents.
+</p>
 <h2>Team Members</h2>
                                                    
 <p>Chase Kenyon, Nicholas Calvaresi.</p>
