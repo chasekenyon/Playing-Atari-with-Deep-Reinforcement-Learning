@@ -54,6 +54,11 @@
     <li><strong>Third Hidden Layer:</strong> The final hidden layer is fully connected, containing 256 rectifier units.</li>
     <li><strong>Output Layer:</strong> The output is a fully-connected linear layer, corresponding to each valid action in the game. The number of valid actions varies between 4 and 18, depending on the game.</li>
 </ul>
+
+<h3>Understanding Q-Learning and Deep Q-Learning</h3>
+<img src="https://cdn.analyticsvidhya.com/wp-content/uploads/2019/04/Screenshot-2019-04-16-at-5.46.01-PM.png" alt="Q-learning and Deep Q-learning Diagram" style="display: block; margin: auto;">
+<p>This image contrasts the traditional Q-learning algorithm with Deep Q-learning. Q-learning works by updating a table of values (Q-table) that estimate the reward for each action in every state. However, as the number of states grows, Q-learning becomes impractical. Deep Q-learning solves this by using a neural network to approximate the Q-values for each action, without needing a massive Q-table, enabling it to handle environments with high-dimensional state spaces such as video games.</p>
+
 <h3>Algorithm 1: Deep Q-learning with Experience Replay</h3>
 <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*ljyyQeR1cQ-sFJERtantHw.png" alt="Deep Q-learning Algorithm" style="display: block; margin: auto;">
 <p>This algorithm is a crucial part of the paper's methodology. It outlines the process of deep Q-learning combined with experience replay, a technique that significantly improves the learning efficiency of the neural network. By storing past experiences and randomly sampling from this memory, the network can learn from a diverse range of past scenarios, leading to more robust learning outcomes. This approach addresses the issue of correlated data and non-stationary distributions, common challenges in deep reinforcement learning.</p>
