@@ -39,7 +39,11 @@
 <div class="col">
 
 <h2>Paper Overview</h2>
-<p>The 2013 research paper "Playing Atari with Deep Reinforcement Learning" by Volodymyr Mnih and colleagues at DeepMind Technologies introduces a groundbreaking deep learning model. This model, a convolutional neural network, uses reinforcement learning to learn control policies directly from high-dimensional sensory inputs, specifically raw pixels from Atari 2600 games. The significance of this work lies in its demonstration of an AI system learning and performing at or above human level without needing manual feature extraction, representing a major advancement in AI capabilities.</p>
+<p>The 2013 research paper “Playing Atari with Deep Reinforcement Learning” by Mnih et al. not only introduced a groundbreaking deep learning model but also showcased the broad applicability of deep reinforcement learning across various domains. The following figure provides a snapshot of these diverse applications.</p>
+
+<img src="https://cdn.analyticsvidhya.com/wp-content/uploads/2019/04/Screenshot-2019-04-17-at-3.48.22-PM.png" alt="Deep Reinforcement Learning Applications" style="display: block; margin: auto; width: 60%;">
+
+<p>This illustration depicts the wide-ranging impact of deep reinforcement learning, from healthcare and education to more complex tasks such as autonomous driving and robotics. It sets the stage for understanding the transformative potential of the research presented in the paper.</p>
 
 <h2>Literature Review</h2>
 <p>The development of deep reinforcement learning, as showcased in this paper, is built upon earlier significant works. Pioneering algorithms like TD-gammon by Gerald Tesauro and Neural Fitted Q-learning (NFQ) by Martin Riedmiller laid the groundwork for this field. Additionally, the Arcade Learning Environment, developed by Marc Bellemare and others, provided a standard testing platform for reinforcement learning algorithms on Atari 2600 games. These foundational works were crucial for the advancements made in "Playing Atari with Deep Reinforcement Learning."</p>
@@ -57,11 +61,18 @@
 
 <h3>Understanding Q-Learning and Deep Q-Learning</h3>
 <img src="https://cdn.analyticsvidhya.com/wp-content/uploads/2019/04/Screenshot-2019-04-16-at-5.46.01-PM.png" alt="Q-learning and Deep Q-learning Diagram" style="display: block; margin: auto; width: 75%;">
-<p>This image contrasts the traditional Q-learning algorithm with Deep Q-learning. Q-learning works by updating a table of values (Q-table) that estimate the reward for each action in every state. However, as the number of states grows, Q-learning becomes impractical. Deep Q-learning solves this by using a neural network to approximate the Q-values for each action, without needing a massive Q-table, enabling it to handle environments with high-dimensional state spaces such as video games.</p>
+<p>This image contrasts the traditional Q-learning algorithm with Deep Q-learning. Q-learning works by updating a table of values (Q-table) that estimate the reward for each action in every state. However, as the number of states grows, Q-learning becomes impractical. Deep Q-learning solves this by using a neural network to approximate the Q-values for each action, without needing a massive Q-table, enabling it to handle environments with high-dimensional state spaces such as video games. In this graph each node represents a state in the environment while each connection between the nodes represents an action that one can take between each state. This is where the Q values come in as they are the weights for each of these connections that allow the network to choose the optimal next step.</p>
 
 <h3>Algorithm 1: Deep Q-learning with Experience Replay</h3>
 <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*ljyyQeR1cQ-sFJERtantHw.png" alt="Deep Q-learning Algorithm" style="display: block; margin: auto;">
 <p>This algorithm is a crucial part of the paper's methodology. It outlines the process of deep Q-learning combined with experience replay, a technique that significantly improves the learning efficiency of the neural network. By storing past experiences and randomly sampling from this memory, the network can learn from a diverse range of past scenarios, leading to more robust learning outcomes. This approach addresses the issue of correlated data and non-stationary distributions, common challenges in deep reinforcement learning.</p>
+
+<h2>Performance Evaluation</h2>
+<p>The following table provides a comparative analysis of the performance of various learning methods, including Deep Q-Learning, on a selection of Atari games. These games serve as benchmarks to evaluate the efficacy of the models.</p>
+
+<img src="https://d3i71xaburhd42.cloudfront.net/667fb84bfca10bec165f9e2cca3e21f5e4829ca7/8-Table1-1.png" alt="Deep Q-Learning Atari Games Performance" style="display: block; margin: auto; width: 80%;">
+
+<p>The upper table presents average total rewards for a fixed number of steps across different learning methods. Notably, the Deep Q-Learning model outperformed a human expert in games such as Breakout, Enduro, and Pong and was competitive in Beam Rider. However, human players still excelled in Q*bert, Seaquest, and Space Invaders. These games pose a greater challenge as they require the development of long-term strategies, highlighting the variance in complexity and objectives among the 2600 Atari games used in this extensive and diverse testing environment.</p>
 
 <h2>Biography</h2>
 <p>The authors of "Playing Atari with Deep Reinforcement Learning" are a team of renowned researchers from DeepMind Technologies. Each member brings a unique set of skills and experiences, contributing to the groundbreaking nature of this research. The team's diverse academic and professional backgrounds in AI and machine learning have been instrumental in advancing the field. Below is a brief overview of each author and their contributions to the paper.</p>
